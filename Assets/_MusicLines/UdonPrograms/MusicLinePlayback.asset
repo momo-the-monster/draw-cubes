@@ -17,14 +17,14 @@ MonoBehaviour:
   udonAssembly: ".data_start\r\n\r\n    .export dataSource\r\n    .export musicPlayer\r\n
     \   .sync points, none\r\n    \r\n    instance_0: %VRCUdonUdonBehaviour, this\r\n
     \   symbolName_0: %SystemString, null\r\n    instance_1: %VRCUdonUdonBehaviour,
-    this\r\n    symbolName_1: %SystemString, null\r\n    instance_4: %VRCUdonUdonBehaviour,
-    this\r\n    symbolName_3: %SystemString, null\r\n    Boolean_0: %SystemBoolean,
-    null\r\n    Int32_0: %SystemInt32, null\r\n    Boolean_1: %SystemBoolean, null\r\n
-    \   instance_5: %VRCUdonUdonBehaviour, this\r\n    eventName_0: %SystemString,
-    null\r\n    instance_6: %UnityEngineLineRenderer, null\r\n    value_0: %SystemInt32,
-    null\r\n    instance_7: %UnityEngineLineRenderer, null\r\n    positions_0: %UnityEngineVector3Array,
-    null\r\n    Int32_1: %SystemInt32, null\r\n    instance_2: %UnityEngineLineRenderer,
+    this\r\n    symbolName_1: %SystemString, null\r\n    instance_2: %UnityEngineLineRenderer,
     null\r\n    instance_3: %VRCUdonUdonBehaviour, this\r\n    symbolName_2: %SystemString,
+    null\r\n    instance_4: %VRCUdonUdonBehaviour, this\r\n    symbolName_3: %SystemString,
+    null\r\n    Boolean_0: %SystemBoolean, null\r\n    Int32_0: %SystemInt32, null\r\n
+    \   Boolean_1: %SystemBoolean, null\r\n    instance_5: %VRCUdonUdonBehaviour,
+    this\r\n    eventName_0: %SystemString, null\r\n    instance_6: %UnityEngineLineRenderer,
+    null\r\n    value_0: %SystemInt32, null\r\n    instance_7: %UnityEngineLineRenderer,
+    null\r\n    positions_0: %UnityEngineVector3Array, null\r\n    Int32_1: %SystemInt32,
     null\r\n    Boolean_2: %SystemBoolean, null\r\n    object_0: %SystemObject, null\r\n
     \   Type_0: %SystemType, null\r\n    result_0: %SystemBoolean, null\r\n    instance_8:
     %UnityEngineGameObject, this\r\n    type_0: %SystemType, null\r\n    Type_1: %SystemType,
@@ -75,13 +75,9 @@ MonoBehaviour:
     \       PUSH, waitingForLoop\r\n        COPY\r\n        PUSH, instance_5\r\n        PUSH,
     eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       PUSH, lineRenderer\r\n        PUSH, instance_6\r\n        COPY\r\n        PUSH,
-    dataSource\r\n        PUSH, instance_3\r\n        COPY\r\n        PUSH, totalPoints\r\n
-    \       PUSH, value_0\r\n        COPY\r\n        PUSH, instance_6\r\n        PUSH,
-    totalPoints\r\n        EXTERN, \"UnityEngineLineRenderer.__set_positionCount__SystemInt32__SystemVoid\"\r\n
+    instance_6\r\n        PUSH, totalPoints\r\n        EXTERN, \"UnityEngineLineRenderer.__set_positionCount__SystemInt32__SystemVoid\"\r\n
     \       PUSH, lineRenderer\r\n        PUSH, instance_7\r\n        COPY\r\n        PUSH,
-    dataSource\r\n        PUSH, instance_3\r\n        COPY\r\n        PUSH, totalPoints\r\n
-    \       PUSH, Int32_1\r\n        COPY\r\n        PUSH, totalPoints\r\n        PUSH,
-    positions_0\r\n        EXTERN, \"UnityEngineVector3Array.__ctor__SystemInt32__UnityEngineVector3Array\"\r\n
+    totalPoints\r\n        PUSH, positions_0\r\n        EXTERN, \"UnityEngineVector3Array.__ctor__SystemInt32__UnityEngineVector3Array\"\r\n
     \       PUSH, instance_7\r\n        PUSH, positions_0\r\n        EXTERN, \"UnityEngineLineRenderer.__SetPositions__UnityEngineVector3Array__SystemVoid\"\r\n
     \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onOwnershipRequest\r\n    \r\n
     \   _onOwnershipRequest:\r\n    \r\n        PUSH, Boolean_2\r\n        PUSH, __returnValue\r\n
@@ -90,10 +86,10 @@ MonoBehaviour:
     \       PUSH, instance_8\r\n        PUSH, type_0\r\n        PUSH, object_0\r\n
     \       EXTERN, \"UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent\"\r\n
     \       PUSH, object_0\r\n        PUSH, result_0\r\n        EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n
-    \       PUSH, result_0\r\n        JUMP_IF_FALSE, 0x000002C0\r\n        PUSH, Type_1\r\n
+    \       PUSH, result_0\r\n        JUMP_IF_FALSE, 0x00000270\r\n        PUSH, Type_1\r\n
     \       PUSH, type_0\r\n        COPY\r\n        PUSH, object_0\r\n        PUSH,
     lineRenderer\r\n        COPY\r\n        PUSH, object_0\r\n        PUSH, lineRenderer\r\n
-    \       COPY\r\n        JUMP, 0x00000324\r\n        PUSH, Type_2\r\n        PUSH,
+    \       COPY\r\n        JUMP, 0x000002D4\r\n        PUSH, Type_2\r\n        PUSH,
     arg0_0\r\n        COPY\r\n        PUSH, instance_9\r\n        PUSH, arg1_0\r\n
     \       EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n        PUSH,
     format_0\r\n        PUSH, arg0_0\r\n        PUSH, arg1_0\r\n        PUSH, message_0\r\n
@@ -104,26 +100,26 @@ MonoBehaviour:
     \       PUSH, visiblePoints\r\n        PUSH, points\r\n        COPY\r\n        PUSH,
     visiblePoints\r\n        PUSH, points\r\n        COPY\r\n        JUMP, 0xFFFFFFFC\r\n
     \   \r\n    .export _update\r\n    \r\n    _update:\r\n    \r\n        PUSH, playing\r\n
-    \       JUMP_IF_FALSE, 0x0000050C\r\n        PUSH, musicPlayer\r\n        PUSH,
+    \       JUMP_IF_FALSE, 0x000004BC\r\n        PUSH, musicPlayer\r\n        PUSH,
     instance_A\r\n        COPY\r\n        PUSH, instance_A\r\n        PUSH, symbolName_4\r\n
     \       PUSH, currentTime\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
     \       PUSH, currentTime\r\n        PUSH, lastTime\r\n        PUSH, Boolean_6\r\n
     \       EXTERN, \"SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n
     \       PUSH, waitingForLoop\r\n        PUSH, Boolean_6\r\n        PUSH, Boolean_4\r\n
     \       EXTERN, \"SystemBoolean.__op_LogicalAnd__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n
-    \       PUSH, Boolean_4\r\n        JUMP_IF_FALSE, 0x0000049C\r\n        PUSH,
+    \       PUSH, Boolean_4\r\n        JUMP_IF_FALSE, 0x0000044C\r\n        PUSH,
     Boolean_7\r\n        PUSH, waitingForLoop\r\n        COPY\r\n        PUSH, lineRenderer\r\n
     \       PUSH, instance_B\r\n        COPY\r\n        PUSH, lineRenderer\r\n        PUSH,
     instance_C\r\n        COPY\r\n        PUSH, instance_C\r\n        PUSH, Int32_3\r\n
     \       EXTERN, \"UnityEngineLineRenderer.__get_positionCount__SystemInt32\"\r\n
     \       PUSH, Int32_3\r\n        PUSH, positions_1\r\n        EXTERN, \"UnityEngineVector3Array.__ctor__SystemInt32__UnityEngineVector3Array\"\r\n
     \       PUSH, instance_B\r\n        PUSH, positions_1\r\n        EXTERN, \"UnityEngineLineRenderer.__SetPositions__UnityEngineVector3Array__SystemVoid\"\r\n
-    \       JUMP, 0x00000504\r\n        PUSH, waitingForLoop\r\n        JUMP_IF_FALSE,
-    0x000004B4\r\n        JUMP, 0x00000504\r\n        PUSH, currentTime\r\n        PUSH,
+    \       JUMP, 0x000004B4\r\n        PUSH, waitingForLoop\r\n        JUMP_IF_FALSE,
+    0x00000464\r\n        JUMP, 0x000004B4\r\n        PUSH, currentTime\r\n        PUSH,
     nextCheckpoint\r\n        PUSH, Boolean_9\r\n        EXTERN, \"SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean\"\r\n
-    \       PUSH, Boolean_9\r\n        JUMP_IF_FALSE, 0x00000504\r\n        PUSH,
+    \       PUSH, Boolean_9\r\n        JUMP_IF_FALSE, 0x000004B4\r\n        PUSH,
     instance_D\r\n        PUSH, eventName_1\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x00000504\r\n        JUMP, 0x0000050C\r\n        JUMP, 0xFFFFFFFC\r\n
+    \       JUMP, 0x000004B4\r\n        JUMP, 0x000004BC\r\n        JUMP, 0xFFFFFFFC\r\n
     \   \r\n    .export SetNextCheckpoint\r\n    \r\n    SetNextCheckpoint:\r\n    \r\n
     \       PUSH, timings\r\n        PUSH, instance_E\r\n        COPY\r\n        PUSH,
     instance_E\r\n        PUSH, nextIndex\r\n        PUSH, nextCheckpoint\r\n        EXTERN,
@@ -143,8 +139,8 @@ MonoBehaviour:
     \       PUSH, nextIndex\r\n        PUSH, Int32_A\r\n        COPY\r\n        PUSH,
     nextIndex\r\n        PUSH, Int32_B\r\n        PUSH, Boolean_A\r\n        EXTERN,
     \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n        PUSH,
-    Boolean_A\r\n        JUMP_IF_FALSE, 0x00000674\r\n        PUSH, Boolean_B\r\n
-    \       PUSH, waitingForLoop\r\n        COPY\r\n        JUMP, 0x00000674\r\n        PUSH,
+    Boolean_A\r\n        JUMP_IF_FALSE, 0x00000624\r\n        PUSH, Boolean_B\r\n
+    \       PUSH, waitingForLoop\r\n        COPY\r\n        JUMP, 0x00000624\r\n        PUSH,
     instance_11\r\n        PUSH, eventName_2\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
@@ -513,7 +509,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Set_Variable
       uid: db41e5b4-17af-4da1-99f3-d4a1eafc1027
-      position: {x: -380, y: -590}
+      position: {x: -380, y: -560}
       nodeUIDs:
       - 
       - a6766784-7747-4783-b653-30d094c29ddb|0
@@ -526,7 +522,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemBoolean
       uid: a6766784-7747-4783-b653-30d094c29ddb
-      position: {x: -380, y: -470}
+      position: {x: -380, y: -440}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -670,7 +666,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Set_Variable
       uid: 5c22f00d-cfa9-458d-9dbb-0e3fc28cfaa4
-      position: {x: -80, y: -590}
+      position: {x: -80, y: -560}
       nodeUIDs:
       - 
       - 4e087779-c748-4044-b3d5-e27adcdad44e|0
@@ -683,7 +679,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemInt32
       uid: 4e087779-c748-4044-b3d5-e27adcdad44e
-      position: {x: -80, y: -470}
+      position: {x: -80, y: -440}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -692,7 +688,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
       uid: c71b3eb9-761d-4d94-96f1-d8c6c49c0b11
-      position: {x: -360, y: -370}
+      position: {x: -360, y: -340}
       nodeUIDs:
       - 
       - 
@@ -1229,7 +1225,7 @@ MonoBehaviour:
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
     - fullName: Set_Variable
       uid: 7ee49f39-9d12-4d7a-8cb4-7e1ab96f8097
-      position: {x: 220, y: -590}
+      position: {x: 220, y: -560}
       nodeUIDs:
       - 
       - b3422109-a04c-4e0f-b29e-18f80c69d53e|0
@@ -1241,7 +1237,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemBoolean
       uid: b3422109-a04c-4e0f-b29e-18f80c69d53e
-      position: {x: 240, y: -460}
+      position: {x: 240, y: -430}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -1358,7 +1354,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: 5a12ccae-b55b-48b1-b483-01cc183fda05
-      position: {x: -200, y: -20}
+      position: {x: -510, y: 30}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -1369,7 +1365,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineLineRenderer.__SetPositions__UnityEngineVector3Array__SystemVoid
       uid: 77cf07f4-2b51-488d-863e-0823600867bb
-      position: {x: 260, y: -50}
+      position: {x: -70, y: -0}
       nodeUIDs:
       - 5a12ccae-b55b-48b1-b483-01cc183fda05|0
       - abb89ea1-d16f-4724-a3d6-561ea5f1ac7b|0
@@ -1381,9 +1377,9 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineVector3Array.__ctor__SystemInt32__UnityEngineVector3Array
       uid: abb89ea1-d16f-4724-a3d6-561ea5f1ac7b
-      position: {x: 60, y: 70}
+      position: {x: -250, y: 120}
       nodeUIDs:
-      - b0b79197-f66f-4a7c-911c-41acdda0f148|0
+      - 9c00ac9b-2a72-4598-a854-7841ffc7723c|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -1407,10 +1403,10 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
     - fullName: UnityEngineLineRenderer.__set_positionCount__SystemInt32__SystemVoid
       uid: 054a292a-ec7b-484d-b2c3-25f60c4e830a
-      position: {x: 60, y: -140}
+      position: {x: -290, y: -70}
       nodeUIDs:
       - 5a12ccae-b55b-48b1-b483-01cc183fda05|0
-      - b0b79197-f66f-4a7c-911c-41acdda0f148|0
+      - 9c00ac9b-2a72-4598-a854-7841ffc7723c|0
       flowUIDs:
       - 77cf07f4-2b51-488d-863e-0823600867bb
       nodeValues:
@@ -1479,12 +1475,23 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|OnCheckpoint
+    - fullName: Get_Variable
+      uid: 9c00ac9b-2a72-4598-a854-7841ffc7723c
+      position: {x: -470, y: 120}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|f3bf0051-15ef-4ce8-8439-79b93de838c2
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
     updateOrder: 0
   graphElementData:
   - type: 2
     uid: ee8529df-6d2b-47b0-aaeb-a2c9f73e2895
-    jsonData: '{"uid":"ee8529df-6d2b-47b0-aaeb-a2c9f73e2895","layout":{"serializedVersion":"2","x":-410.0,"y":-650.0,"width":851.0,"height":440.0},"containedElements":["16950bbc-fa48-49fc-a589-18455cc6415b","d29a95a0-b0d7-4ff9-a57d-c754f9c3fd11","ace8d884-b5dd-4815-bea8-bbb9f9b90adc","07d9b24c-fc78-4d3e-b9b2-7d056a3e5ed7","e4048a17-3f51-449f-bd4f-17c7b48b38f8","764fe239-a84f-44c1-b828-34d20ccdd3bb","1db1471e-6dd5-4336-a184-a4cf697c60b5","8168d9fe-76bd-4b91-8c4c-7cee84237be4","28532942-245d-4b97-a8b9-36b2ab305701","490458fa-75a3-4ead-adca-89aa55ba00eb","398e2aa7-752e-4633-b1ab-0755d1f9bb04","698903e6-7076-4d1a-af09-fd22c86c7924","cdc2bf10-444d-4e06-bd43-bf67b2d06f94","8fea8537-167f-4755-9355-3305b7a5a940","d31981dd-4650-42a1-9afd-41529346bd09","b941eee4-817f-4ebb-8963-5df3c4c5bedd","cc11d05f-0a87-42aa-9669-a031bbbedaeb","9102da49-634d-4e3d-8c49-79ca6a2cfd35","bd4b1196-c16e-4281-8ef5-c5975d77058d","b398014a-93fa-43cc-b06d-186729965d7e","641511b0-29a2-46c3-b04b-0c6d595913ec","889963ba-e9fe-445d-8218-813c8cf8d2d8","e5572b8a-6cc3-4e4b-8cb6-50cdee6658b6","521f46d9-2d15-4795-aa33-499f9e748003","484d996a-39f2-454b-a2ad-0c2ebede0361","db41e5b4-17af-4da1-99f3-d4a1eafc1027","a6766784-7747-4783-b653-30d094c29ddb","5c22f00d-cfa9-458d-9dbb-0e3fc28cfaa4","4e087779-c748-4044-b3d5-e27adcdad44e","c4ecbd54-cf49-4289-9c5e-4d53adb45084","c71b3eb9-761d-4d94-96f1-d8c6c49c0b11","b6720dae-f512-4d66-89aa-9e04ea8e3e28","2b1f5d79-3bd9-4eaa-9e37-525f78456297","f70c3db8-5d74-46fb-9dce-8242bd57c7a7","1663c372-1aba-4eca-9e35-41b11086dcfc","3b60cab1-abe4-4c2d-b127-df75b0d6b8f9","7ee49f39-9d12-4d7a-8cb4-7e1ab96f8097","b3422109-a04c-4e0f-b29e-18f80c69d53e","a7491597-eb5f-4e50-a5b8-a9a9a22b61c3","6830999f-00c8-413c-9b14-a7bdc31bf1e1","1d83bc85-7221-4ce7-8e8d-a0c06165faeb","83975480-6adf-4d0f-b281-27ac0a947a2a","9437a682-3f38-40a1-a42d-5bd55de16223","48079ae1-abab-4b73-a882-881961b5e951","949f9e6b-d100-4f35-9e13-632d647ba805"],"title":"OnFinish,
-      Update Points Array from LineRenderer and Bake the Mesh Collider","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+    jsonData: '{"uid":"ee8529df-6d2b-47b0-aaeb-a2c9f73e2895","layout":{"serializedVersion":"2","x":-410.0,"y":-620.0,"width":828.0,"height":440.0},"containedElements":["16950bbc-fa48-49fc-a589-18455cc6415b","d29a95a0-b0d7-4ff9-a57d-c754f9c3fd11","ace8d884-b5dd-4815-bea8-bbb9f9b90adc","07d9b24c-fc78-4d3e-b9b2-7d056a3e5ed7","e4048a17-3f51-449f-bd4f-17c7b48b38f8","764fe239-a84f-44c1-b828-34d20ccdd3bb","1db1471e-6dd5-4336-a184-a4cf697c60b5","8168d9fe-76bd-4b91-8c4c-7cee84237be4","28532942-245d-4b97-a8b9-36b2ab305701","490458fa-75a3-4ead-adca-89aa55ba00eb","398e2aa7-752e-4633-b1ab-0755d1f9bb04","698903e6-7076-4d1a-af09-fd22c86c7924","cdc2bf10-444d-4e06-bd43-bf67b2d06f94","8fea8537-167f-4755-9355-3305b7a5a940","d31981dd-4650-42a1-9afd-41529346bd09","b941eee4-817f-4ebb-8963-5df3c4c5bedd","cc11d05f-0a87-42aa-9669-a031bbbedaeb","9102da49-634d-4e3d-8c49-79ca6a2cfd35","bd4b1196-c16e-4281-8ef5-c5975d77058d","b398014a-93fa-43cc-b06d-186729965d7e","641511b0-29a2-46c3-b04b-0c6d595913ec","889963ba-e9fe-445d-8218-813c8cf8d2d8","e5572b8a-6cc3-4e4b-8cb6-50cdee6658b6","521f46d9-2d15-4795-aa33-499f9e748003","484d996a-39f2-454b-a2ad-0c2ebede0361","db41e5b4-17af-4da1-99f3-d4a1eafc1027","a6766784-7747-4783-b653-30d094c29ddb","5c22f00d-cfa9-458d-9dbb-0e3fc28cfaa4","4e087779-c748-4044-b3d5-e27adcdad44e","c4ecbd54-cf49-4289-9c5e-4d53adb45084","c71b3eb9-761d-4d94-96f1-d8c6c49c0b11","b6720dae-f512-4d66-89aa-9e04ea8e3e28","2b1f5d79-3bd9-4eaa-9e37-525f78456297","f70c3db8-5d74-46fb-9dce-8242bd57c7a7","1663c372-1aba-4eca-9e35-41b11086dcfc","3b60cab1-abe4-4c2d-b127-df75b0d6b8f9","7ee49f39-9d12-4d7a-8cb4-7e1ab96f8097","b3422109-a04c-4e0f-b29e-18f80c69d53e","a7491597-eb5f-4e50-a5b8-a9a9a22b61c3","6830999f-00c8-413c-9b14-a7bdc31bf1e1","1d83bc85-7221-4ce7-8e8d-a0c06165faeb","83975480-6adf-4d0f-b281-27ac0a947a2a","9437a682-3f38-40a1-a42d-5bd55de16223","48079ae1-abab-4b73-a882-881961b5e951","949f9e6b-d100-4f35-9e13-632d647ba805"],"title":"playing
+      = true, nextIndex = 0, waitingForloop = true, SetNextCheckpoint","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
     uid: cd33cf70-0bc3-43db-ac00-0b5eaea3e7c1
     jsonData: '{"uid":"cd33cf70-0bc3-43db-ac00-0b5eaea3e7c1","layout":{"serializedVersion":"2","x":6020.0,"y":-1040.0,"width":731.0,"height":275.0},"containedElements":["3cd76e77-e278-4901-82f1-7e5471ca4020","3973ee95-2edf-462a-bf82-13d1ae9ddb06","282e165c-f7e1-4f48-ac66-0caf0eb2ae0a"],"title":"Allow
@@ -1555,14 +1562,14 @@ MonoBehaviour:
       visiblePoints","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
     uid: 4f0f1e67-6c6d-45c2-928c-136ba9f70046
-    jsonData: '{"uid":"4f0f1e67-6c6d-45c2-928c-136ba9f70046","layout":{"serializedVersion":"2","x":-710.0,"y":-1320.0,"width":1138.0,"height":666.0},"containedElements":["c50d9b61-bdb5-45d1-8765-65fa6293526b","8494795b-5ea7-413a-b41e-64f82a51eb71","99ce8e01-cca4-463f-967b-85be13aa2fc2","36c1c5ed-ed3f-4714-af0c-5204a90d5224","33717a34-7c53-4967-ae6e-3c703dfaac7c","6d436535-390a-4ed7-8d4f-ba0592efae93","9bd1f081-60a4-4af5-ae7d-767ddfed2e33","b0b79197-f66f-4a7c-911c-41acdda0f148","758ed677-74b4-48db-802a-0bf19c82950c","06bd35c0-9c5a-4074-88bd-032fbe24f653"],"title":"Get
-      timings and points from DataSource","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+    jsonData: '{"uid":"4f0f1e67-6c6d-45c2-928c-136ba9f70046","layout":{"serializedVersion":"2","x":-700.0,"y":-1320.0,"width":1146.0,"height":668.0},"containedElements":["c50d9b61-bdb5-45d1-8765-65fa6293526b","8494795b-5ea7-413a-b41e-64f82a51eb71","99ce8e01-cca4-463f-967b-85be13aa2fc2","36c1c5ed-ed3f-4714-af0c-5204a90d5224","33717a34-7c53-4967-ae6e-3c703dfaac7c","6d436535-390a-4ed7-8d4f-ba0592efae93","9bd1f081-60a4-4af5-ae7d-767ddfed2e33","b0b79197-f66f-4a7c-911c-41acdda0f148","758ed677-74b4-48db-802a-0bf19c82950c","06bd35c0-9c5a-4074-88bd-032fbe24f653"],"title":"From
+      DataSource, get timing and point arrays, set totalPoints count, set lastTime","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
     uid: 823cdbb3-f059-48c0-af37-7388ed5c9c9f
-    jsonData: '{"uid":"823cdbb3-f059-48c0-af37-7388ed5c9c9f","layout":{"serializedVersion":"2","x":-230.0,"y":-200.0,"width":659.0,"height":382.0},"containedElements":["77cf07f4-2b51-488d-863e-0823600867bb","abb89ea1-d16f-4724-a3d6-561ea5f1ac7b","054a292a-ec7b-484d-b2c3-25f60c4e830a","5a12ccae-b55b-48b1-b483-01cc183fda05"],"title":"Set
+    jsonData: '{"uid":"823cdbb3-f059-48c0-af37-7388ed5c9c9f","layout":{"serializedVersion":"2","x":-540.0,"y":-140.0,"width":638.0,"height":364.0},"containedElements":["77cf07f4-2b51-488d-863e-0823600867bb","abb89ea1-d16f-4724-a3d6-561ea5f1ac7b","054a292a-ec7b-484d-b2c3-25f60c4e830a","5a12ccae-b55b-48b1-b483-01cc183fda05","9c00ac9b-2a72-4598-a854-7841ffc7723c"],"title":"Set
       enough blank positions","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   viewTransform:
-    position: {x: 1063.4996, y: 963.52466}
-    scale: 0.27312487
+    position: {x: 868.49677, y: 695.2877}
+    scale: 0.57175326
   version: 1.0.0
   showAssembly: 0
