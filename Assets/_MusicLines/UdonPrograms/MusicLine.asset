@@ -309,7 +309,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|10
     - fullName: UnityEngineLineRenderer.__get_positionCount__SystemInt32
       uid: d4a0f09a-9dc3-4a4e-8b9d-0bc5a049c4d7
-      position: {x: -1040, y: 60}
+      position: {x: -910, y: 160}
       nodeUIDs:
       - aaf3e75f-5574-4790-8b3b-272131e9336e|0
       flowUIDs: []
@@ -1209,7 +1209,7 @@ MonoBehaviour:
       LineMesh","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
     uid: e1f1b054-6654-41d6-8b91-4ef815c32248
-    jsonData: '{"uid":"e1f1b054-6654-41d6-8b91-4ef815c32248","layout":{"serializedVersion":"2","x":-1300.0,"y":-140.0,"width":1274.0,"height":510.0},"containedElements":["aaf3e75f-5574-4790-8b3b-272131e9336e","d4a0f09a-9dc3-4a4e-8b9d-0bc5a049c4d7","17221806-01ea-49ac-abf8-f67f9e58aaf6","9dce16c7-8cb9-4b8a-b96a-39b7dd9b3f0b","88e1f699-c450-46b2-85fd-20b65399ad98","09dfef14-acd5-4a05-b59a-4f91484baa8c","20e09264-191b-4018-b392-04b751a99277","c6cd907a-9fa4-483b-8d26-a12cc00369d1","f63ca069-77a3-43a3-9e07-11614694d7b1","b572f32d-9a0d-492d-801e-e445952e5fd2","2fe99bc9-3ad3-42fa-8001-3a5b2823b39f","27045f72-30f0-4d10-a83b-0c62107e7d4b","799374b7-b962-494f-98ab-4fe2e4dab929","f7da410b-84ed-42bf-b4e3-824377c37e91","41e7fb26-859b-41aa-a5fd-08bd85fc3c53","b5574a61-5b81-42e8-8b86-2f1581254e2b"],"title":"OnUpdate
+    jsonData: '{"uid":"e1f1b054-6654-41d6-8b91-4ef815c32248","layout":{"serializedVersion":"2","x":-1300.0,"y":-140.0,"width":1276.0,"height":510.0},"containedElements":["aaf3e75f-5574-4790-8b3b-272131e9336e","d4a0f09a-9dc3-4a4e-8b9d-0bc5a049c4d7","17221806-01ea-49ac-abf8-f67f9e58aaf6","9dce16c7-8cb9-4b8a-b96a-39b7dd9b3f0b","88e1f699-c450-46b2-85fd-20b65399ad98","09dfef14-acd5-4a05-b59a-4f91484baa8c","20e09264-191b-4018-b392-04b751a99277","c6cd907a-9fa4-483b-8d26-a12cc00369d1","f63ca069-77a3-43a3-9e07-11614694d7b1","b572f32d-9a0d-492d-801e-e445952e5fd2","2fe99bc9-3ad3-42fa-8001-3a5b2823b39f","27045f72-30f0-4d10-a83b-0c62107e7d4b","799374b7-b962-494f-98ab-4fe2e4dab929","f7da410b-84ed-42bf-b4e3-824377c37e91","41e7fb26-859b-41aa-a5fd-08bd85fc3c53","b5574a61-5b81-42e8-8b86-2f1581254e2b"],"title":"OnUpdate
       event, set points from current line positions, check for color changes","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
     uid: 34a3be36-d111-4f8e-b955-19f05265e0cb
@@ -1234,7 +1234,7 @@ MonoBehaviour:
     uid: 9d335548-9a64-4e1e-8387-8fdfd585b20c
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":8.0,"y":145.0,"width":214.0,"height":318.0}}'
   viewTransform:
-    position: {x: 1117.3772, y: 415.94485}
-    scale: 0.57175326
+    position: {x: 1203.4861, y: 534.0413}
+    scale: 0.8695652
   version: 1.0.0
   showAssembly: 0

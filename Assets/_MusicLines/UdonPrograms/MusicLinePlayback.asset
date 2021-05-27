@@ -1744,7 +1744,7 @@ MonoBehaviour:
     jsonData: '{"uid":"24a6af0c-0045-477d-8af2-56429c15896c","layout":{"serializedVersion":"2","x":-2300.0,"y":660.0,"width":762.0,"height":356.0},"containedElements":["55ca1db8-3451-42e1-ac59-4c0d8e3f336a","4f8fe475-e826-4dc2-91bb-3f3701e3cead","a9d898d8-47c7-41a5-817f-dd99385ea6b4","269d7e4d-3745-4998-a72f-975219a87b56","d154d99f-ebea-4df8-9532-7e43e48c0981","25b63af0-8605-473e-90a4-e0266cba0104"],"title":"set
       currentTime if playing","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   viewTransform:
-    position: {x: 1496.0886, y: -831.5504}
-    scale: 1
+    position: {x: 1711.8844, y: -1004.60645}
+    scale: 1.15
   version: 1.0.0
   showAssembly: 0

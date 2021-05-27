@@ -675,7 +675,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Branch
       uid: c85b5b44-d79d-4a79-9012-18cd6c4a0dd7
-      position: {x: 1520, y: -100}
+      position: {x: 1520, y: -80}
       nodeUIDs:
       - d3543149-726a-4675-999b-f9273d45bce9|0
       flowUIDs:
@@ -685,7 +685,7 @@ MonoBehaviour:
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: d3543149-726a-4675-999b-f9273d45bce9
-      position: {x: 1350, y: -20}
+      position: {x: 1340, y: 0}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -849,7 +849,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|OnFinish
     - fullName: Event_Update
       uid: 11564152-5153-43ee-a9d5-9a974e659c07
-      position: {x: 1380, y: -140}
+      position: {x: 1380, y: -120}
       nodeUIDs: []
       flowUIDs:
       - c85b5b44-d79d-4a79-9012-18cd6c4a0dd7
@@ -1800,7 +1800,7 @@ MonoBehaviour:
       Point to Line","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
     uid: d02c29c5-3010-4811-be26-bcb1a2ed8f05
-    jsonData: '{"uid":"d02c29c5-3010-4811-be26-bcb1a2ed8f05","layout":{"serializedVersion":"2","x":1325.0,"y":-205.0,"width":368.0,"height":288.0},"containedElements":["d3543149-726a-4675-999b-f9273d45bce9","c85b5b44-d79d-4a79-9012-18cd6c4a0dd7","8cf6c41d-4f2f-44e7-8494-6f80555976c6","bc553124-7b6c-4eff-ba20-4bb9d3c71621","11564152-5153-43ee-a9d5-9a974e659c07"],"title":"Are
+    jsonData: '{"uid":"d02c29c5-3010-4811-be26-bcb1a2ed8f05","layout":{"serializedVersion":"2","x":1320.0,"y":-180.0,"width":375.0,"height":292.0},"containedElements":["d3543149-726a-4675-999b-f9273d45bce9","c85b5b44-d79d-4a79-9012-18cd6c4a0dd7","8cf6c41d-4f2f-44e7-8494-6f80555976c6","bc553124-7b6c-4eff-ba20-4bb9d3c71621","11564152-5153-43ee-a9d5-9a974e659c07"],"title":"Are
       we drawing?","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
     uid: 4a3206e3-a6c9-4d37-af6c-a6dea623d992
@@ -1849,7 +1849,7 @@ MonoBehaviour:
     uid: 9d335548-9a64-4e1e-8387-8fdfd585b20c
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":130.0,"width":249.0,"height":639.0}}'
   viewTransform:
-    position: {x: -340.53366, y: 238.71693}
-    scale: 0.57175326
+    position: {x: -1093.0352, y: 139.22456}
+    scale: 0.49717674
   version: 1.0.0
   showAssembly: 0
