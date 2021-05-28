@@ -1087,7 +1087,7 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Set_Variable
@@ -1273,7 +1273,7 @@ MonoBehaviour:
     jsonData: '{"uid":"fffba974-bfec-4a8f-bfc5-0f656e0359b7","layout":{"serializedVersion":"2","x":-200.0,"y":-100.0,"width":715.0,"height":321.0},"containedElements":["b2a526dd-dfb2-4339-bc5d-c9511499ed15","61239f7f-6865-4f07-adaa-e8a39578218b","b9267142-28e9-4877-abee-bf43e7238c89","f71aaf2d-021e-42b4-aa05-3ca954c5ff10"],"title":"Trickle
       down OnStart event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   viewTransform:
-    position: {x: 1473.61, y: -115.68643}
-    scale: 0.8695652
+    position: {x: 1414.9977, y: 219.65189}
+    scale: 0.7561437
   version: 1.0.0
   showAssembly: 0
