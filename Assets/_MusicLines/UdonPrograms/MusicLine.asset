@@ -15,14 +15,14 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 8bfe1586e03e021488faac97847fab3b,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export linePlayback\r\n    .sync points,
-    none\r\n    .sync color, none\r\n    \r\n    instance_0: %VRCUdonUdonBehaviour,
-    this\r\n    eventName_0: %SystemString, null\r\n    instance_1: %VRCUdonUdonBehaviour,
-    this\r\n    target_0: %VRCUdonCommonInterfacesNetworkEventTarget, null\r\n    eventName_1:
-    %SystemString, null\r\n    instance_2: %VRCUdonUdonBehaviour, this\r\n    eventName_2:
-    %SystemString, null\r\n    instance_3: %UnityEngineLineRenderer, null\r\n    value_0:
-    %SystemInt32, null\r\n    instance_4: %UnityEngineVector3Array, null\r\n    instance_5:
-    %UnityEngineLineRenderer, null\r\n    positions_0: %UnityEngineVector3Array, null\r\n
-    \   instance_6: %VRCUdonUdonBehaviour, this\r\n    eventName_3: %SystemString,
+    none\r\n    .sync color, none\r\n    .sync timings, none\r\n    \r\n    instance_0:
+    %VRCUdonUdonBehaviour, this\r\n    eventName_0: %SystemString, null\r\n    instance_1:
+    %VRCUdonUdonBehaviour, this\r\n    target_0: %VRCUdonCommonInterfacesNetworkEventTarget,
+    null\r\n    eventName_1: %SystemString, null\r\n    instance_2: %VRCUdonUdonBehaviour,
+    this\r\n    eventName_2: %SystemString, null\r\n    instance_3: %UnityEngineLineRenderer,
+    null\r\n    value_0: %SystemInt32, null\r\n    instance_4: %UnityEngineVector3Array,
+    null\r\n    instance_5: %UnityEngineLineRenderer, null\r\n    positions_0: %UnityEngineVector3Array,
+    null\r\n    instance_6: %VRCUdonUdonBehaviour, this\r\n    eventName_3: %SystemString,
     null\r\n    instance_7: %UnityEngineLineRenderer, null\r\n    value_1: %SystemBoolean,
     null\r\n    Boolean_0: %SystemBoolean, null\r\n    Int32_1: %SystemInt32, null\r\n
     \   instance_8: %UnityEngineLineRenderer, null\r\n    positions_1: %UnityEngineVector3Array,
@@ -1272,6 +1272,9 @@ MonoBehaviour:
     uid: fffba974-bfec-4a8f-bfc5-0f656e0359b7
     jsonData: '{"uid":"fffba974-bfec-4a8f-bfc5-0f656e0359b7","layout":{"serializedVersion":"2","x":-200.0,"y":-100.0,"width":715.0,"height":321.0},"containedElements":["b2a526dd-dfb2-4339-bc5d-c9511499ed15","61239f7f-6865-4f07-adaa-e8a39578218b","b9267142-28e9-4877-abee-bf43e7238c89","f71aaf2d-021e-42b4-aa05-3ca954c5ff10"],"title":"Trickle
       down OnStart event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  - type: 5
+    uid: dc14e803-4fc3-4260-9336-22728f1042f2
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":8.0,"y":145.0,"width":238.0,"height":428.0}}'
   viewTransform:
     position: {x: 1414.9977, y: 219.65189}
     scale: 0.7561437

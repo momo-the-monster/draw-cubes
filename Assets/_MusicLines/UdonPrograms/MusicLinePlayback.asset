@@ -189,7 +189,7 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_UnityEngineLineRenderer
@@ -1692,8 +1692,11 @@ MonoBehaviour:
     uid: 355230c1-01a4-4f51-9752-3b4e5db9a910
     jsonData: '{"uid":"355230c1-01a4-4f51-9752-3b4e5db9a910","layout":{"serializedVersion":"2","x":-1220.0,"y":-260.0,"width":713.0,"height":476.0},"containedElements":["015aee63-3fff-473e-8e1f-d37923508dee","c9121603-359b-4cb5-a478-cb6a5f1874c8","54fb8f7b-7253-4605-8477-7f716a140a33","01947a88-d878-4516-b505-a4e84fe3442c","e82e9686-4312-4ac8-a0c7-05321cc3af3e","ce898b24-b9d7-4e0d-8877-7b2cd4517912","82fc1846-076b-4ce7-8dcc-306788d8a754"],"title":"create
       array of positions from first points position","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  - type: 5
+    uid: dc14e803-4fc3-4260-9336-22728f1042f2
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":8.0,"y":138.0,"width":221.0,"height":488.0}}'
   viewTransform:
-    position: {x: 2061.063, y: 919.6422}
+    position: {x: -226.79068, y: 1009.2116}
     scale: 0.49717674
   version: 1.0.0
   showAssembly: 0

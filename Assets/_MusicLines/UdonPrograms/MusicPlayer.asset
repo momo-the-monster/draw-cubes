@@ -20,86 +20,78 @@ MonoBehaviour:
     %UnityEngineUISlider, null\r\n    value_0: %SystemSingle, null\r\n    Boolean_0:
     %SystemBoolean, null\r\n    Single_2: %SystemSingle, null\r\n    Single_3: %SystemSingle,
     null\r\n    Boolean_1: %SystemBoolean, null\r\n    obj_0: %UnityEngineGameObject,
-    this\r\n    instance_2: %VRCUdonUdonBehaviour, this\r\n    message_0: %SystemObject,
-    null\r\n    format_0: %SystemString, null\r\n    arg0_0: %SystemObject, null\r\n
-    \   instance_3: %UnityEngineAudioSource, null\r\n    value_1: %SystemInt32, null\r\n
-    \   Int32_0: %SystemInt32, null\r\n    Int32_1: %SystemInt32, null\r\n    instance_4:
-    %UnityEngineAudioSource, null\r\n    value_2: %SystemDouble, null\r\n    Double_0:
-    %SystemDouble, null\r\n    Double_1: %SystemDouble, null\r\n    Double_2: %SystemDouble,
-    null\r\n    message_1: %SystemObject, null\r\n    format_1: %SystemString, null\r\n
-    \   arg0_1: %SystemObject, null\r\n    arg1_0: %SystemObject, null\r\n    arg2_0:
-    %SystemObject, null\r\n    Double_3: %SystemDouble, null\r\n    Double_4: %SystemDouble,
-    null\r\n    object_0: %SystemObject, null\r\n    Type_0: %SystemType, null\r\n
-    \   result_0: %SystemBoolean, null\r\n    Type_1: %SystemType, null\r\n    instance_6:
-    %UnityEngineAudioClip, null\r\n    instance_7: %UnityEngineAudioSource, null\r\n
-    \   instance_5: %UnityEngineGameObject, this\r\n    type_0: %SystemType, null\r\n
-    \   Type_2: %SystemType, null\r\n    Boolean_2: %SystemBoolean, null\r\n    Double_5:
-    %SystemDouble, null\r\n    Double_6: %SystemDouble, null\r\n    Boolean_3: %SystemBoolean,
-    null\r\n    inputJumpBoolValue: %SystemBoolean, null\r\n    instance_8: %UnityEngineAudioSource,
-    null\r\n    instance_9: %UnityEngineAudioSource, null\r\n    audioSource: %UnityEngineAudioSource,
-    null\r\n    clipLength: %SystemSingle, null\r\n    timelineSlider: %UnityEngineUISlider,
-    null\r\n    normalizedTime: %SystemSingle, null\r\n    networkTime: %SystemDouble,
-    null\r\n    lastNormalizedTime: %SystemSingle, null\r\n    lastNetworkTime: %SystemDouble,
-    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _update\r\n    \r\n
-    \   _update:\r\n    \r\n        PUSH, audioSource\r\n        PUSH, instance_0\r\n
-    \       COPY\r\n        PUSH, instance_0\r\n        PUSH, Single_0\r\n        EXTERN,
-    \"UnityEngineAudioSource.__get_time__SystemSingle\"\r\n        PUSH, Single_0\r\n
-    \       PUSH, clipLength\r\n        PUSH, normalizedTime\r\n        EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n
+    this\r\n    instance_2: %VRCUdonUdonBehaviour, this\r\n    Boolean_2: %SystemBoolean,
+    null\r\n    Single_4: %SystemSingle, null\r\n    Single_5: %SystemSingle, null\r\n
+    \   f_0: %SystemSingle, null\r\n    Single_6: %SystemSingle, null\r\n    Single_7:
+    %SystemSingle, null\r\n    value_1: %SystemDouble, null\r\n    instance_3: %UnityEngineAudioSource,
+    null\r\n    value_2: %SystemInt32, null\r\n    Int32_0: %SystemInt32, null\r\n
+    \   Int32_1: %SystemInt32, null\r\n    instance_4: %UnityEngineAudioSource, null\r\n
+    \   value_3: %SystemDouble, null\r\n    Double_2: %SystemDouble, null\r\n    Double_3:
+    %SystemDouble, null\r\n    Double_4: %SystemDouble, null\r\n    Double_0: %SystemDouble,
+    null\r\n    Double_1: %SystemDouble, null\r\n    object_0: %SystemObject, null\r\n
+    \   Type_0: %SystemType, null\r\n    result_0: %SystemBoolean, null\r\n    Type_1:
+    %SystemType, null\r\n    instance_6: %UnityEngineAudioClip, null\r\n    instance_7:
+    %UnityEngineAudioSource, null\r\n    instance_5: %UnityEngineGameObject, this\r\n
+    \   type_0: %SystemType, null\r\n    Type_2: %SystemType, null\r\n    Boolean_3:
+    %SystemBoolean, null\r\n    inputJumpBoolValue: %SystemBoolean, null\r\n    instance_8:
+    %UnityEngineAudioSource, null\r\n    instance_9: %UnityEngineAudioSource, null\r\n
+    \   audioSource: %UnityEngineAudioSource, null\r\n    clipLength: %SystemSingle,
+    null\r\n    timelineSlider: %UnityEngineUISlider, null\r\n    normalizedTime:
+    %SystemSingle, null\r\n    networkTime: %SystemDouble, null\r\n    lastNormalizedTime:
+    %SystemSingle, null\r\n    lastNetworkTime: %SystemDouble, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n
+    \   .export _update\r\n    \r\n    _update:\r\n    \r\n        PUSH, audioSource\r\n
+    \       PUSH, instance_0\r\n        COPY\r\n        PUSH, instance_0\r\n        PUSH,
+    Single_0\r\n        EXTERN, \"UnityEngineAudioSource.__get_time__SystemSingle\"\r\n
+    \       PUSH, Single_0\r\n        PUSH, clipLength\r\n        PUSH, normalizedTime\r\n
+    \       EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n
     \       PUSH, timelineSlider\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH,
     instance_1\r\n        PUSH, normalizedTime\r\n        EXTERN, \"UnityEngineUISlider.__set_value__SystemSingle__SystemVoid\"\r\n
     \       PUSH, lastNormalizedTime\r\n        PUSH, normalizedTime\r\n        PUSH,
     Boolean_0\r\n        EXTERN, \"SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n
-    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x000002A0\r\n        PUSH,
+    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x00000290\r\n        PUSH,
     obj_0\r\n        PUSH, Boolean_1\r\n        EXTERN, \"VRCSDKBaseNetworking.__IsOwner__UnityEngineGameObject__SystemBoolean\"\r\n
-    \       PUSH, Boolean_1\r\n        JUMP_IF_FALSE, 0x0000013C\r\n        PUSH,
+    \       PUSH, Boolean_1\r\n        JUMP_IF_FALSE, 0x000000F8\r\n        PUSH,
     networkTime\r\n        EXTERN, \"VRCSDKBaseNetworking.__GetServerTimeInSeconds__SystemDouble\"\r\n
     \       PUSH, instance_2\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid\"\r\n
-    \       PUSH, networkTime\r\n        PUSH, arg0_0\r\n        COPY\r\n        PUSH,
-    format_0\r\n        PUSH, networkTime\r\n        PUSH, message_0\r\n        EXTERN,
-    \"SystemString.__Format__SystemString_SystemObject__SystemString\"\r\n        PUSH,
-    message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
-    \       JUMP, 0x00000298\r\n        PUSH, audioSource\r\n        PUSH, instance_3\r\n
-    \       COPY\r\n        PUSH, audioSource\r\n        PUSH, instance_4\r\n        COPY\r\n
-    \       PUSH, instance_4\r\n        PUSH, Int32_0\r\n        EXTERN, \"UnityEngineAudioSource.__get_timeSamples__SystemInt32\"\r\n
-    \       PUSH, Double_2\r\n        PUSH, Double_0\r\n        COPY\r\n        PUSH,
-    Double_4\r\n        EXTERN, \"VRCSDKBaseNetworking.__GetServerTimeInSeconds__SystemDouble\"\r\n
-    \       PUSH, networkTime\r\n        PUSH, Double_4\r\n        PUSH, Double_1\r\n
+    \       JUMP, 0x00000288\r\n        PUSH, Double_0\r\n        EXTERN, \"VRCSDKBaseNetworking.__GetServerTimeInSeconds__SystemDouble\"\r\n
+    \       PUSH, Double_0\r\n        PUSH, networkTime\r\n        PUSH, value_1\r\n
     \       EXTERN, \"SystemDouble.__op_Subtraction__SystemDouble_SystemDouble__SystemDouble\"\r\n
-    \       PUSH, Double_0\r\n        PUSH, Double_1\r\n        PUSH, value_2\r\n
-    \       EXTERN, \"SystemDouble.__op_Multiplication__SystemDouble_SystemDouble__SystemDouble\"\r\n
-    \       PUSH, value_2\r\n        PUSH, Int32_1\r\n        EXTERN, \"SystemConvert.__ToInt32__SystemDouble__SystemInt32\"\r\n
-    \       PUSH, Int32_0\r\n        PUSH, Int32_1\r\n        PUSH, value_1\r\n        EXTERN,
-    \"SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32\"\r\n        PUSH,
-    instance_3\r\n        PUSH, value_1\r\n        EXTERN, \"UnityEngineAudioSource.__set_timeSamples__SystemInt32__SystemVoid\"\r\n
-    \       PUSH, Double_4\r\n        PUSH, arg0_1\r\n        COPY\r\n        PUSH,
-    Double_1\r\n        PUSH, arg1_0\r\n        COPY\r\n        PUSH, format_1\r\n
-    \       PUSH, Double_4\r\n        PUSH, Double_1\r\n        PUSH, arg2_0\r\n        PUSH,
-    message_1\r\n        EXTERN, \"SystemString.__Format__SystemString_SystemObject_SystemObject_SystemObject__SystemString\"\r\n
-    \       PUSH, message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
-    \       JUMP, 0x000002A0\r\n        PUSH, normalizedTime\r\n        PUSH, lastNormalizedTime\r\n
-    \       COPY\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _start\r\n    \r\n
-    \   _start:\r\n    \r\n        PUSH, Type_0\r\n        PUSH, type_0\r\n        COPY\r\n
-    \       PUSH, instance_5\r\n        PUSH, type_0\r\n        PUSH, object_0\r\n
-    \       EXTERN, \"UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent\"\r\n
+    \       PUSH, value_1\r\n        PUSH, Single_6\r\n        EXTERN, \"SystemConvert.__ToSingle__SystemDouble__SystemSingle\"\r\n
+    \       PUSH, Single_6\r\n        PUSH, clipLength\r\n        PUSH, f_0\r\n        EXTERN,
+    \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n
+    \       PUSH, f_0\r\n        PUSH, Single_4\r\n        EXTERN, \"UnityEngineMathf.__Abs__SystemSingle__SystemSingle\"\r\n
+    \       PUSH, Single_4\r\n        PUSH, Single_5\r\n        PUSH, Boolean_2\r\n
+    \       EXTERN, \"SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n
+    \       PUSH, Boolean_2\r\n        JUMP_IF_FALSE, 0x00000288\r\n        PUSH,
+    audioSource\r\n        PUSH, instance_3\r\n        COPY\r\n        PUSH, audioSource\r\n
+    \       PUSH, instance_4\r\n        COPY\r\n        PUSH, instance_4\r\n        PUSH,
+    Int32_0\r\n        EXTERN, \"UnityEngineAudioSource.__get_timeSamples__SystemInt32\"\r\n
+    \       PUSH, Double_4\r\n        PUSH, Double_2\r\n        COPY\r\n        PUSH,
+    value_1\r\n        PUSH, Double_3\r\n        COPY\r\n        PUSH, Double_2\r\n
+    \       PUSH, value_1\r\n        PUSH, value_3\r\n        EXTERN, \"SystemDouble.__op_Multiplication__SystemDouble_SystemDouble__SystemDouble\"\r\n
+    \       PUSH, value_3\r\n        PUSH, Int32_1\r\n        EXTERN, \"SystemConvert.__ToInt32__SystemDouble__SystemInt32\"\r\n
+    \       PUSH, Int32_0\r\n        PUSH, Int32_1\r\n        PUSH, value_2\r\n        EXTERN,
+    \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n        PUSH,
+    instance_3\r\n        PUSH, value_2\r\n        EXTERN, \"UnityEngineAudioSource.__set_timeSamples__SystemInt32__SystemVoid\"\r\n
+    \       JUMP, 0x00000288\r\n        JUMP, 0x00000290\r\n        PUSH, normalizedTime\r\n
+    \       PUSH, lastNormalizedTime\r\n        COPY\r\n        JUMP, 0xFFFFFFFC\r\n
+    \   \r\n    .export _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, Type_0\r\n
+    \       PUSH, type_0\r\n        COPY\r\n        PUSH, instance_5\r\n        PUSH,
+    type_0\r\n        PUSH, object_0\r\n        EXTERN, \"UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent\"\r\n
     \       PUSH, object_0\r\n        PUSH, result_0\r\n        EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n
-    \       PUSH, result_0\r\n        JUMP_IF_FALSE, 0x000003B4\r\n        PUSH, Type_1\r\n
+    \       PUSH, result_0\r\n        JUMP_IF_FALSE, 0x000003A4\r\n        PUSH, Type_1\r\n
     \       PUSH, type_0\r\n        COPY\r\n        PUSH, object_0\r\n        PUSH,
     audioSource\r\n        COPY\r\n        PUSH, object_0\r\n        PUSH, audioSource\r\n
     \       COPY\r\n        PUSH, Type_2\r\n        PUSH, type_0\r\n        COPY\r\n
     \       PUSH, object_0\r\n        PUSH, instance_7\r\n        COPY\r\n        PUSH,
     object_0\r\n        PUSH, instance_6\r\n        EXTERN, \"UnityEngineAudioSource.__get_clip__UnityEngineAudioClip\"\r\n
     \       PUSH, instance_6\r\n        PUSH, clipLength\r\n        EXTERN, \"UnityEngineAudioClip.__get_length__SystemSingle\"\r\n
-    \       JUMP, 0x000003B4\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onDeserialization\r\n
-    \   \r\n    _onDeserialization:\r\n    \r\n        PUSH, lastNetworkTime\r\n        PUSH,
-    networkTime\r\n        PUSH, Boolean_2\r\n        EXTERN, \"SystemDouble.__op_Inequality__SystemDouble_SystemDouble__SystemBoolean\"\r\n
-    \       PUSH, Boolean_2\r\n        JUMP_IF_FALSE, 0x00000408\r\n        PUSH,
-    networkTime\r\n        PUSH, lastNetworkTime\r\n        COPY\r\n        JUMP,
-    0x00000408\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _inputJump\r\n    \r\n
-    \   _inputJump:\r\n    \r\n        PUSH, inputJumpBoolValue\r\n        PUSH, Boolean_3\r\n
-    \       COPY\r\n        PUSH, Boolean_3\r\n        JUMP_IF_FALSE, 0x00000460\r\n
-    \       PUSH, audioSource\r\n        PUSH, instance_8\r\n        COPY\r\n        PUSH,
-    instance_8\r\n        EXTERN, \"UnityEngineAudioSource.__Pause__SystemVoid\"\r\n
-    \       JUMP, 0x00000484\r\n        PUSH, audioSource\r\n        PUSH, instance_9\r\n
+    \       JUMP, 0x000003A4\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _inputJump\r\n
+    \   \r\n    _inputJump:\r\n    \r\n        PUSH, inputJumpBoolValue\r\n        PUSH,
+    Boolean_3\r\n        COPY\r\n        PUSH, Boolean_3\r\n        JUMP_IF_FALSE,
+    0x000003FC\r\n        PUSH, audioSource\r\n        PUSH, instance_8\r\n        COPY\r\n
+    \       PUSH, instance_8\r\n        EXTERN, \"UnityEngineAudioSource.__Pause__SystemVoid\"\r\n
+    \       JUMP, 0x00000420\r\n        PUSH, audioSource\r\n        PUSH, instance_9\r\n
     \       COPY\r\n        PUSH, instance_9\r\n        EXTERN, \"UnityEngineAudioSource.__UnPause__SystemVoid\"\r\n
     \       JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
@@ -438,7 +430,7 @@ MonoBehaviour:
       - 2f79a7f2-5409-4729-923e-2578835d36f6
       flowUIDs:
       - 4ae989c4-30c3-4bf5-a658-ec515250da7c
-      - 831e17c2-dc2e-4ce4-84cc-40b8b33be632
+      - c8adad27-91ac-4870-b2c7-65c0081cb176
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
@@ -537,7 +529,7 @@ MonoBehaviour:
       position: {x: 1040, y: 1400}
       nodeUIDs: []
       flowUIDs:
-      - fbef47be-c214-4998-a54b-50a466739e94
+      - 
       nodeValues: []
     - fullName: Get_Variable
       uid: 619a5758-cced-4612-964d-02b2d8e9e28e
@@ -584,7 +576,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemDouble.__op_Inequality__SystemDouble_SystemDouble__SystemBoolean
       uid: 051ff54f-99a7-4650-98dc-269505309a32
-      position: {x: 1090, y: 1520}
+      position: {x: 1080, y: 1560}
       nodeUIDs:
       - c7ab05cc-2767-4faf-bdbb-1e4d28047a87|0
       - 619a5758-cced-4612-964d-02b2d8e9e28e|0
@@ -606,12 +598,12 @@ MonoBehaviour:
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
     - fullName: SystemString.__Format__SystemString_SystemObject_SystemObject_SystemObject__SystemString
       uid: 8cb95c51-e443-49e2-9f99-0d8c8efcabc0
-      position: {x: 2220, y: 680}
+      position: {x: 2390, y: 640}
       nodeUIDs:
       - 
       - 4214fa7f-33aa-4d6c-a420-42e93855c587|0
-      - b143d3a7-2a05-4d35-85fc-a029e128fe24|0
-      - 
+      - 39bae850-a405-4057-a4b8-e71120376646|0
+      - 6fc41124-541b-409e-a42f-eefaf60d7a1a|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -625,7 +617,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
       uid: b643d5be-625e-4cc1-af24-ae617dec86fe
-      position: {x: 2700, y: 420}
+      position: {x: 2760, y: 410}
       nodeUIDs:
       - 8cb95c51-e443-49e2-9f99-0d8c8efcabc0
       flowUIDs: []
@@ -673,13 +665,13 @@ MonoBehaviour:
       nodeUIDs:
       - 
       flowUIDs:
-      - 4db80f14-1d6b-4271-9150-5c498211de9c
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
     - fullName: VRCSDKBaseNetworking.__GetServerTimeInSeconds__SystemDouble
       uid: 4214fa7f-33aa-4d6c-a420-42e93855c587
-      position: {x: 1410, y: 780}
+      position: {x: 1390, y: 800}
       nodeUIDs: []
       flowUIDs: []
       nodeValues: []
@@ -698,8 +690,8 @@ MonoBehaviour:
       uid: b143d3a7-2a05-4d35-85fc-a029e128fe24
       position: {x: 1650, y: 720}
       nodeUIDs:
-      - 9178ce8b-1eea-4cf6-9e2f-ed7377c206bc|0
       - 4214fa7f-33aa-4d6c-a420-42e93855c587|0
+      - 9178ce8b-1eea-4cf6-9e2f-ed7377c206bc|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -722,9 +714,9 @@ MonoBehaviour:
       position: {x: 2560, y: 320}
       nodeUIDs:
       - a235b2c6-11f4-41f3-a92d-cb59c49545a8|0
-      - 45678015-f761-4f2e-afbd-dcec212a3e92|0
+      - c8f174be-6e0f-4e62-b9da-bceaf0c34f9a|0
       flowUIDs:
-      - b643d5be-625e-4cc1-af24-ae617dec86fe
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -744,7 +736,7 @@ MonoBehaviour:
       position: {x: 2360, y: 270}
       nodeUIDs:
       - d4263bcb-da46-4d66-aab2-9c77ec2b30a7|0
-      - 
+      - 6fc41124-541b-409e-a42f-eefaf60d7a1a|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -812,7 +804,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: Const_SystemDouble
       uid: 2c52d2b1-fc0f-4482-ac91-e4c2f2ab3e7b
-      position: {x: 1790, y: 470}
+      position: {x: 1790, y: 490}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -833,13 +825,86 @@ MonoBehaviour:
         stringValue: System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: SystemConvert.__ToInt32__SystemDouble__SystemInt32
       uid: 6fc41124-541b-409e-a42f-eefaf60d7a1a
-      position: {x: 2150, y: 540}
+      position: {x: 2130, y: 520}
       nodeUIDs:
       - c9d3c738-a8cf-459a-9798-39ca6de3206e|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: Branch
+      uid: c8adad27-91ac-4870-b2c7-65c0081cb176
+      position: {x: 2670, y: 870}
+      nodeUIDs:
+      - 43340279-c181-4405-bbe1-36656f4a85cc|0
+      flowUIDs:
+      - 831e17c2-dc2e-4ce4-84cc-40b8b33be632
+      - 
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+    - fullName: SystemConvert.__ToSingle__SystemDouble__SystemSingle
+      uid: 6f1c22c0-0838-42f4-b17c-f44bb1f9e937
+      position: {x: 2000, y: 800}
+      nodeUIDs:
+      - b143d3a7-2a05-4d35-85fc-a029e128fe24|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: UnityEngineMathf.__Abs__SystemSingle__SystemSingle
+      uid: 39bae850-a405-4057-a4b8-e71120376646
+      position: {x: 2370, y: 850}
+      nodeUIDs:
+      - c18e95d2-45c4-4ebe-8a68-58db13ab4698|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
+      uid: 0fb7df78-faac-408c-aef1-8f86ea13d2bb
+      position: {x: 2870, y: 950}
+      nodeUIDs:
+      - 39bae850-a405-4057-a4b8-e71120376646|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+      uid: c18e95d2-45c4-4ebe-8a68-58db13ab4698
+      position: {x: 2200, y: 870}
+      nodeUIDs:
+      - 6f1c22c0-0838-42f4-b17c-f44bb1f9e937|0
+      - d0ed4e48-c437-44b2-bf56-ccc41718e199|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: Get_Variable
+      uid: d0ed4e48-c437-44b2-bf56-ccc41718e199
+      position: {x: 2140, y: 980}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|7afe343b-dac3-43f0-b40a-5c2033665288
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean
+      uid: 43340279-c181-4405-bbe1-36656f4a85cc
+      position: {x: 2520, y: 1000}
+      nodeUIDs:
+      - 39bae850-a405-4057-a4b8-e71120376646|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0.1
     updateOrder: 0
   graphElementData:
   - type: 2
@@ -848,10 +913,10 @@ MonoBehaviour:
       Logic","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
     uid: ada51426-3853-49d8-a458-aba5333acc5d
-    jsonData: '{"uid":"ada51426-3853-49d8-a458-aba5333acc5d","layout":{"serializedVersion":"2","x":830.0,"y":1340.0,"width":807.0,"height":412.0},"containedElements":["051ff54f-99a7-4650-98dc-269505309a32","fbef47be-c214-4998-a54b-50a466739e94","c7ab05cc-2767-4faf-bdbb-1e4d28047a87","aa4cf79a-4b1e-444b-8757-5db29a0522c5","4ae68313-dcd6-43ca-968a-cfe30e19412e","619a5758-cced-4612-964d-02b2d8e9e28e"],"title":"Don''t
-      think we need this","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+    jsonData: '{"uid":"ada51426-3853-49d8-a458-aba5333acc5d","layout":{"serializedVersion":"2","x":820.0,"y":1340.0,"width":807.0,"height":412.0},"containedElements":["051ff54f-99a7-4650-98dc-269505309a32","fbef47be-c214-4998-a54b-50a466739e94","c7ab05cc-2767-4faf-bdbb-1e4d28047a87","aa4cf79a-4b1e-444b-8757-5db29a0522c5","4ae68313-dcd6-43ca-968a-cfe30e19412e","619a5758-cced-4612-964d-02b2d8e9e28e"],"title":"update
+      lastNetworktime when it changes","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   viewTransform:
-    position: {x: -1667.3597, y: -16.014542}
-    scale: 1
+    position: {x: 295.778, y: 722.94324}
+    scale: 0.8695652
   version: 1.0.0
   showAssembly: 0
